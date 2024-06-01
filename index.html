@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JN-GAMES</title>
+    <link rel="icon" type="image/png" href="./img/joystick_game_3819.png">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+    <header class="home">
+        <nav>
+            <a class="logo" href="#">
+                <i class="fas fa-gamepad"></i>
+               <span>JN-Games</span>
+                </a>
+            <ul>
+                <li><a href="#TopNuevos">Top Nuevos</a></li>
+                <li ><a href="./registrarse.html">Registrarse</a></li>
+                <li><a  class="iniciarsesion" href="./login.html">Iniciar Sesión</a></li>
+                <li><a  class="api" href="#">Conexión a API</a></li>
+            </ul>
+        </div>
+        </nav>
+        <div id="resultado-api"></div>
+    </header>
+    <main>
+    <section class="fondo">
+          <img src="./img/fondo.jpg" alt="fondo" class="img-fluid">
+          <div class="texto-fondo">
+          <h1 class="texto-principal">Un lugar donde encontrarás <br> tus juegos favoritos</h1>
+          <h2 class="texto-secundario">Divertite jugando</h2>
+          <a class="registrate" href="./registrarse.html">Registrate</a>
+        </div>
+    </section>
+    <section class="buscador">
+         <h2>¿Qué juego estás buscando?</h2>
+         <input type="search" id="buscador" placeholder="Buscar...">
+         <a class="boton-buscador" href="#TopNuevos">Buscar</a>
+    </section>
+    <hr>
+    <section id="TopNuevos">
+           <div class="container">
+                <h3>Top Nuevos Juegos</h3>
+                <div class="row" id="grilla-juegos"></div>
+                    </div>
+                    <div id="pagination-container"></div>
+                    </section>
+                    <section id="carrusel-juegos">
+                        <div class="container">
+                          <h3>Juegos</h3>
+                          <div class="carrusel-inner">
+                            <div id="juegos-carousel" class="owl-carousel owl-theme">
+                          </div>
+                          <div id="pag-container" class="owl-nav">
+                          </div>
+                        </div>
+                      </section>
+</main>
+<footer>
+    <p>Términos</p>
+    <p>Ayuda</p>
+    <p>Copyright</p>
+    <button class="boton-arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+</footer>
+<script src="./js/api.js"></script>
+<script src="./js/botonarriba.js"></script>
+</body>
+</html>

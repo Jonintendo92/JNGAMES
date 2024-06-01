@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión | JN-GAMES</title>
+    <link rel="icon" type="image/png" href="./img/joystick_game_3819.png">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+</head>
+<body class="logingin">
+    <header>
+        <nav>
+        <a class="logo" href="./index.html">
+            <i class="fas fa-gamepad"></i>
+           <span>JN-Games</span>
+            </a>
+        </nav>
+    </header>
+    <main class="login">
+<form action="" id="form-login" novalidate>
+    <h2>Iniciar Sesión</h2>
+    <div class="form-contenido">
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <span class="error" id="email-error"></span>
+    </div>
+    <div class="form-contenido">
+        <input type="password" id="contra" name="contra" placeholder="Contraseña" required> 
+        <span class="error" id="contra-error"></span>
+    </div>
+    <div class="boton">
+        <button type="submit" id="boton-login">Iniciar Sesión</button>
+     </div>
+</form>
+<div class="pag-registrarse">
+    <p>Registrarse</p>
+</div>
+    </main>
+    <script src="./js/login.js"></script>
+</body>
+</html>

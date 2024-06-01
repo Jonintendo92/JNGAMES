@@ -1,0 +1,112 @@
+.registro{
+  background-color: #212121;
+  text-align: center;
+  width: 40%;
+  margin: 0 35%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+}
+.registro h2{
+  font-size: 2rem;
+}
+
+.registrarse{
+  background-image: url(./img/fondo2.jpg);
+  width: 90%;
+}
+
+.form-contenido{
+  padding-top: 5%;
+}
+
+.form-contenido span{
+  font-size: 10px;
+}
+
+.ayuda{
+font-size: 10px;
+}
+
+ .form-contenido #nombre, 
+ .form-contenido #apellido, 
+ .form-contenido #mail, 
+ .form-contenido #contraseña, 
+ .form-contenido #fecha, 
+ .form-contenido #pais{
+  border-radius: 30px;
+  width: 500px;
+  height: 40px;
+  padding-left: 3%;
+  color: black;
+  border: 2px solid #340E62;
+ }
+
+ .boton{
+  background-color: #340E62;
+  width: 500px;
+  height: 40px;
+  margin-bottom: 5%;
+  padding-top: 2%;
+  border-radius: 30px;
+ }
+
+ #condiciones{
+  font-size: 1.5px;
+  margin-bottom: 8%;
+  margin-left: -250px;
+ }
+
+
+
+
+
+ <main class="registro">
+    <form action="">
+        <h2>Registro</h2>
+        <div class="form-contenido">
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+        </div>
+        <div class="form-contenido">
+        <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+    </div>
+        <div class="form-contenido">
+        <input type="email" name="mail" id="mail" placeholder="Mail">
+    </div>
+        <div class="form-contenido">
+        <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
+    </div>
+        <div class="form-contenido">
+        <input type="date" name="fecha" id="fecha">
+    </div>
+        <div class="form-contenido">
+        <select name="pais" id="pais">
+        <option value="P">País</option>
+        <option value="Arg">Argentina</option>
+        <option value="Bol">Bolivia</option>
+        <option value="Br">Brasil</option>
+        <option value="Ch">Chile</option>
+        <option value="Col">Colombia</option>
+        <option value="E">Ecuador</option>
+        <option value="P">Paraguay</option>
+        <option value="Pe">Perú</option>
+        <option value="Ur">Uruguay</option>
+        <option value="Ven">Venezuela</option>
+        </select>
+    </div>
+    <div class="form-contenido">
+        <input type="checkbox" name="condiciones" id="condiciones">
+        <span>Acepto los términos y condiciones</span>
+        </div>
+        <div class="boton">
+        <a href="#">Registrarse</a>
+    </div>
+    <div class="ayuda">
+        <p>Necesitas ayuda?</p>
+    </div>
+    </form>
+    </main>
+

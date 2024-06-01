@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro | JN-GAMES</title>
+    <link rel="icon" type="image/png" href="./img/joystick_game_3819.png">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body class="registrarse">
+    <header>
+        <nav>
+            <a class="logo" href="./index.html">
+                <i class="fas fa-gamepad"></i>
+               <span>JN-Games</span>
+                </a>
+            </nav>
+    </header>
+   
+ <main class="registro">
+    <form action="" id="form-registro" novalidate>
+        <h2>Registro</h2>
+        <div class="form-contenido">
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+            <span class="error"></span>
+        </div>
+        <div class="form-contenido">
+        <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+        <span class="error"></span>
+    </div>
+        <div class="form-contenido">
+        <input type="email" name="mail" id="mail" placeholder="Mail" required>
+        <span class="error"></span>
+    </div>
+        <div class="form-contenido"> 
+        <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" required>
+        <span class="error"></span>
+    </div>
+        <div class="form-contenido">
+        <input type="date" name="fecha" id="fecha" required>
+        <span class="error"></span>
+    </div>
+        <div class="form-contenido pais-contenido">
+        <select name="pais" id="pais" required>
+        <option value="P">País</option>
+        <option value="Arg">Argentina</option>
+        <option value="Bol">Bolivia</option>
+        <option value="Br">Brasil</option>
+        <option value="Ch">Chile</option>
+        <option value="Col">Colombia</option>
+        <option value="E">Ecuador</option>
+        <option value="P">Paraguay</option>
+        <option value="Pe">Perú</option>
+        <option value="Ur">Uruguay</option>
+        <option value="Ven">Venezuela</option>
+        </select>
+        <span id="paisError" class="error"></span>
+    </div>
+    <div class="form-contenido">
+        <input type="checkbox" name="condiciones" id="condiciones" required> 
+        <span>Acepto los términos y condiciones</span>
+        <span id="condicionesError" class="error-condiciones"></span>
+        </div>
+        <div class="boton">
+       <button type="submit" id="boton-registrarse">Registrarse</button>
+    </div>
+    <div class="ayuda">
+        <p>Necesitas ayuda?</p>
+    </div>
+    </form>
+    </main>
+    <script src="./js/registrarse.js"></script>
+</body>
+</html> 
